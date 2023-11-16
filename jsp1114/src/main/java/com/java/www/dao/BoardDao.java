@@ -8,7 +8,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 import com.java.www.dto.BoardDto;
-import com.java.www.dto.MemberDto;
+
 public class BoardDao {
 	
 	Connection conn = null;
@@ -31,6 +31,7 @@ public class BoardDao {
 					bno = rs.getInt("bno");
 					System.out.println("listSelectAll bno : "+bno);
 					btitle = rs.getString("btitle");
+					System.out.println("listSelectAll btitle :"+btitle);
 					bcontent = rs.getString("bcontent");
 					bdate = rs.getTimestamp("bdate");
 					id = rs.getString("id");
