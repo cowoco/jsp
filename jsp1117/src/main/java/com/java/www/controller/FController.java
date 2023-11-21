@@ -17,6 +17,7 @@ import com.java.www.service.BInsertService;
 import com.java.www.service.BListService;
 import com.java.www.service.BSelectOneService;
 import com.java.www.service.BUpdateService;
+import com.java.www.service.DoMInsertService;
 
 //1107
 @WebServlet("*.do")
@@ -37,8 +38,13 @@ public class FController extends HttpServlet {
 		case "/index.do": 
 			response.sendRedirect("index.jsp");
 			break;
-		case "/memInsert.do":
-			response.sendRedirect("memInsert.jsp");
+		case "/mInsert.do":
+			response.sendRedirect("mInsert.jsp");
+			break;
+		case "/doMInsert.do":
+			service = new DoMInsertService();
+			service.execute(request, response);
+			url="doMInsert.jsp";
 			break;
 		case "/login.do":
 			response.sendRedirect("login.jsp");

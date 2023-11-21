@@ -13,7 +13,7 @@
 			<h1>로그인을 해주세요.</h1>
 			<ul>
 			  <li><a href="login.do">로그인</a></li>
-			  <li><a href="memInsert.do">회원가입</a></li>
+			  <li><a href="mInsert.do">회원가입</a></li>
 			</ul>
 		</c:if>
 		<c:if test="${session_id !=null }">
