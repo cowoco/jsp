@@ -75,6 +75,7 @@
 		       </td>
 		     </tr>
 		   </table>
+		   <a href="bReply.do?bno=${bdto.bno}"><button type="button" id="rbtn">답글달기</button></a>
 		   <a href="bUpdate.do?bno=${bdto.bno}"><button type="button" id="fbtn">게시글수정</button></a>
 		  <button type="button" id="delBtn">게시글삭제</button>
 		   <a href="bList.do"><button type="button">게시글리스트</button></a>

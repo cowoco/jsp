@@ -15,8 +15,10 @@ import com.java.www.service.Service;
 import com.java.www.service.BDeleteService;
 import com.java.www.service.BInsertService;
 import com.java.www.service.BListService;
+import com.java.www.service.BReplyService;
 import com.java.www.service.BSelectOneService;
 import com.java.www.service.BUpdateService;
+import com.java.www.service.DoBReplyService;
 import com.java.www.service.DoMInsertService;
 
 //1107
@@ -102,6 +104,18 @@ public class FController extends HttpServlet {
 			System.out.println("bno "+request.getParameter("bno"));
 			System.out.println("FController :bDelete.jsp호출");
 			url="bDelete.jsp";
+			break;
+		case "/bReply.do": //6. 답글달기 -select
+			service = new BReplyService();
+			service.execute(request, response);
+			System.out.println("FController :bReply.jsp호출");
+			url="bReply.jsp";
+			break;
+		case "/doBReply.do": //6. 답글달기저장 -insert
+			service = new DoBReplyService();
+			service.execute(request, response);
+			System.out.println("FController :doBReply.jsp호출");
+			url="doBReply.jsp";
 			break;
 		
 
