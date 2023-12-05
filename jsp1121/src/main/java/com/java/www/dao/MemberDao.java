@@ -53,7 +53,6 @@ public class MemberDao {
 				rs=pstmt.executeQuery();
 				if(rs.next()) {
 					id =rs.getString("id");
-					System.out.println("dao DoLogin id: "+id);
 					pw =rs.getString("pw");
 					name =rs.getString("name");
 					phone =rs.getString("phone");

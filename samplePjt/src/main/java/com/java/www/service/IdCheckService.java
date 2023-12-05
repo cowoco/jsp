@@ -16,8 +16,6 @@ public class IdCheckService {
 		else result = "사용불가능";
 			
 		
-		
-		
 		return result;
 	}
 	
